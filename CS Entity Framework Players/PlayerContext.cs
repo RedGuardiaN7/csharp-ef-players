@@ -10,7 +10,7 @@ namespace CS_Entity_Framework_Players
 {
     public class PlayerContext : DbContext
     {
-        public DbSet<Players> Players { get; set; }
+        public DbSet<Player> Players { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

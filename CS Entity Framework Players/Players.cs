@@ -13,8 +13,7 @@ using System.Threading.Tasks;
 namespace CS_Entity_Framework_Players
 {
     [Table("Player")]
-    [Index(nameof(Surname), IsUnique = true)]
-    public class Players
+    public class Player
     {
         [Key]
         public int PlayerId { get; set; }
