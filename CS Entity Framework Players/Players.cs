@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace CS_Entity_Framework_Players
 {
-    [Table("Player")]
+    [Table("player")]
     public class Player
     {
         [Key]
@@ -25,5 +25,7 @@ namespace CS_Entity_Framework_Players
         public int PlayedGames { get; set; }
         public int GamesWon { get; set; }
 
+        public int TeamId { get; set; } 
+        public Team Team { get; set; }
     }
 }
